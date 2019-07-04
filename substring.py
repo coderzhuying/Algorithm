@@ -1,4 +1,4 @@
-def lengthOfLongestSubstring(self, s: str) -> int:
+def lengthOfLongestSubstring(s):
     ls = []
     l = len(s)
     if l == 1:
