@@ -4,12 +4,14 @@ import random
 def partition(array, i, j):
     target = array[i]
     while i < j:
-        while i < j and target > array[i]:
-            i += 1
-        while i < j and target < array[j]:
+        while i < j and target <= arr[j]:
             j -= 1
-        array[i], array[j] = array[j], array[i]
-
+        arr[i], arr[j] = arr[j], arr[i]
+    
+        while i < j and target >= arr[i]:
+          i += 1
+        arr[i], arr[j] = arr[j], arr[i]
+        
     return i
 
 
